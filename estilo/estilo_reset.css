@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #F6F9FD;
+}
+#container{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 0.9em;
+    background: url(../img/bgr-topo.png) no-repeat top;
+    background-color: #f1f1f1;
+}

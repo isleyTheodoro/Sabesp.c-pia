@@ -1,0 +1,307 @@
+header{                     /* CONTAINER DO TOPO CABEÇALHO */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#img-logo{                  /*IMG DO LOGO SABESP*/
+    width: 250px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 30px;
+    float: left;
+}
+/*=======================================================================================================================================*/
+#contraste{                /*POSIÇÃO DOS CONTEÚDOS (P) (SPAN) FONT E CONTRASTE */
+    float: right;
+    margin-right: 30px;;
+}
+#contraste p {              /*FORMATAÇÃO DO CONTEÚDO (P) */
+    display: inline-block; /*<- display inline-block pois a tag (p) é do tipo "BLOCK"*/
+    padding-right: 5px;
+    margin-right:10px;
+    color: #ffff;
+    text-transform: uppercase;
+}
+#contraste span{            /*FORMATAÇÃO DO CONTEÚDO (SPAN) */
+    display: inline-block;/*<- display inline-block pois a tag (span) é do tipo "inline" não sendo possivel por margin, padding.*/
+    background: url(../img/ico-contraste.gif) no-repeat center right;
+    width: 60px;
+    height: 15px;
+    padding-right: 12px;
+    margin-right:10px ;
+    color: #ffff;
+    font-size: 0.9em;
+}
+/*====================================================================================================================================*/
+                                /* BARRA DE PESQUISA SUPERIOR */
+#menu-pesquisa{
+    float: right;
+    position: absolute;
+    top: 25px;                          /*<--- formatação da barra de pesquisa superior */
+    right: 35px;
+    width: 225px;
+    display: block;
+    height:30px ;
+    background: url(../img/bgr-busca.png) no-repeat top;
+    border-radius: 2px;
+}
+#menu-pesquisa input{
+    width: 220px;                       /*<--- formatação do input campo de pesquisa */
+    height: 30px;
+    background: url(../img/btn-localizar.png) no-repeat right center;
+    border-radius: 2px;
+}
+#menu-pesquisa input::placeholder{
+    font-size: 0.9em;                   /*<--- formatação do texto dentro campo de pesquisa */
+    padding-left: 5px;
+}
+/*====================================================================================================================================*/
+                            /* MENU DE NAVEGAÇÃO TOPO */
+
+#menu-topo ul{              /*<--- formatação da lista de menu */
+    overflow: hidden; 
+    box-sizing: border-box;   
+    float: right;  
+    margin: 50px 15px 0 0;
+}
+#menu-topo li{
+    list-style: none;   /*<--- formatação dos itens da lista de menu*/
+    float: right;
+    margin-right: 15px; 
+}
+#menu-topo a{
+    background: url(../img/seta-sub-menu.png) no-repeat center left ;
+    font-size: 0.9em;  
+    padding-left: 8px;          /*<--- formatação dos links do menu topo */
+    text-decoration: none;
+    color: #ffff;
+}
+/*=====================================================================================================================================*/
+                            /* IMAGEM DO SUB MENU TOPO*/
+#sub-menu-img img{           
+    clear: both;                            /*<--- formatação da imagen do sub menu inferior  é apenas uma imagens / header */
+    cursor: pointer;
+}
+.separacao{
+    height: 20px;                           /*<--- formatação da linha que divide o topo com o conteudo / main */
+    margin-top: 10px;
+    background-color: #F1F1F1;
+}                                                           /*FIM DO HEADER*/
+/*====================================================================================================================================*/
+                                                            /*INICIO DO MAIN*/
+main{
+    width: 100%;                            /*<--- formatação do Container central corpo do site MAIN */
+    overflow: hidden;
+}     
+#img-conteudo{
+    float: left; 
+    position: relative;                           /*<--- formatação da img  mulher / main */
+}  
+#icons{
+    position: absolute;
+    left: 299px;
+    top: 20px;
+    float: left;
+    width: 340px;
+    height: 235px;
+    background: url(../img/bgr-sua-conta.png) no-repeat;
+}  
+#icons h1{
+    font-size: 15px;
+    text-transform: uppercase;              /*<--- formatação do titulo do container icons / main */
+    color: #54add7;
+    padding-top: 7px;
+    padding-left: 25px;
+    width: 100%;
+}
+#icons-links{
+    height: 550px;
+    width: 352px;                           /*<--- formatação da div interna dentro do container icons / main */
+    padding-left: 20px;
+}
+.bloco-icons{
+    float: left;                            /*<--- formatação dos icons da div  icons / main */
+    margin: 10px 0;
+}
+.bloco-icons img{
+    width: 79px;                             /*<--- formatação das imagens icons / main */
+    height: 89px;
+    float: left;
+}
+.bloco-icons a{
+    cursor: pointer;
+    float: left;                            /*<--- formatação dos links dentro da div icons / main */
+    width: 57px;
+    text-decoration: none;
+    color: #8D9FAB;
+    font-size: 0.8em;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+/*=====================================================================================================================================*/
+                                            /*CAIXA VAZA AO LADO DO CONTEUDO DE ICONS */
+.vazio{
+    width: 345px;
+    height: 320px;                     /*<--- formatação da caixa vazia divisao de conteudos header / main*/
+    border: solid 1px #DCE9F4;
+    position: absolute;
+    top: 0;
+    right: -372px;
+
+}
+/*====================================================================================================================================*/
+                                                    /*SUB MENU INFERIOR */
+#sub-menu{                                     
+    float: right; 
+    position: relative;                          
+}
+#sub-menu span{
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 600;
+    list-style: none;
+}
+#sub-menu-links{
+    position: absolute; 
+    top:10px;            
+    float: right;   
+}
+#sub-menu-links li{
+    float:left;
+    list-style: none;                               
+}
+.links{
+    display: block;
+    color: #ffff;
+    text-decoration: none;                         
+    font-size: 0.8em;
+    padding-left: 45px;
+    padding-top: 10px;
+    padding-right: 5px;
+}  
+.links1{
+    display: block;
+    color: #ffff;
+    text-decoration: none;                          /*<--- formatação do links do sub-menu */
+    font-size: 1.1em;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-right: 12px;
+}                                              /* FIM DO SUB MENU */
+/*==================================================================================================================================*/
+                                                /*INICIO DO CONTEUDO DE INFORMAÇOES GERAIS CENTRAL */
+#container-conteudo-central{
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    height: 820px;
+}
+#conteudo-informacao{
+    margin-top: 60px;
+    width: 700px;    /*<--- formatação do container do conteudo central blocos */
+}
+
+#conteudo-informacao h1{
+    color: #2F81D2 ;               /*<--- formatação do cabeçalho conteudo central blocos */
+    font-size: 1.5em;
+}
+.comunicados{
+    float: left;
+    display: block;                     /*<--- formatação das caixas de conteudo central blocos */
+    margin: 50px 25px 10px 5px;
+    width: 200px;
+    height: 271px;
+}
+.comunicados span{
+    font-size: 1.1em;                   /*<--- formatação do cabeçalho das caixas de conteudo bloco */
+    color: #536aee;
+    display: block;
+    padding: 15px 0 15px 5px;
+}
+.comunicados img{
+    border-radius: 4px;                /*<--- formatação da imagem dos conteudo central bloco*/
+}
+.comunicados p{
+    font-size: 0.8em;                  /*<--- formatação do paragrafos do conteúdo central bloco */
+    color: #929ea7;
+    padding: 15px 0 20px 5px;
+    text-align: left;
+}                                       /*FIM DOS ARTIGOS CENTRAIS*/
+/*=====================================================================================================================================*/
+                                        /* INICIO FORMATAÇÃO DOS CONTEUDOS LATERAIS DIREITA*/
+#cano{
+    position: absolute;
+    right: 185px;
+    top: 50px; 
+}
+#conteudo-lateral{
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background-color: #fff;  
+}
+#conteudo-lateral-localizar{
+    width: 180px;
+}
+#conteudo-lateral-localizar h1{
+    font-size: 1.1em;
+    color: #2F81D2;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+#conteudo-lateral-localizar p{
+    font-size: 0.9em;
+    color:#929ea7;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+#conteudo-lateral-localizar input{
+    background: url(../img/bgr-busca.png) ;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#conteudo-lateral-localizar input::placeholder{
+    display: block;
+    padding-left: 5px;
+    border: none;
+}
+#conteudo-lateral-localizar a img{
+    float: right;
+    margin-right: 10px;
+}
+#conteudo-lateral-banner img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: #54add7 1px dotted;
+    padding-top: 40px;
+    padding-left: 5px;
+    width: 170px;   
+}
+/*====================================================================================================================================*/
+                                                            /*INICIO DO RODAPÉ*/
+footer{
+    text-align: center;            /*<--- formatação geral do rodapé*/
+    height: 45px;
+    padding-top: 10px;
+    background: url(../img/bgr-topo.png) no-repeat top;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ffff;
+    font-weight: bold;
+}
+footer a{
+    color: #021b33;        /*<--- formatação do link sabesp rodapé */
+    font-size: 1.2em;
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    font-weight: bold;
+    background: url(../img/logos-rodape-big.gif);
+    border-radius: 10px;
+}
